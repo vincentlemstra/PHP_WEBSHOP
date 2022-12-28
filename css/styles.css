@@ -1,0 +1,234 @@
+/* Fonts:
+font-family: 'Mr Dafoe', cursive;
+font-family: 'Poppins', sans-serif; 
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    /* display: block; */
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif; 
+    color: #000000;
+}
+
+header {
+    text-align: center;
+    color: #000000;
+    font-size: 55px;
+    margin: 25px 0px;
+    font-family: 'Mr Dafoe', cursive;
+}
+
+
+
+nav .menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+nav .menu a {
+    text-decoration: none;
+    color: #000000;
+}
+
+main {
+    margin: 0 20% 100px 20%;
+}
+
+main .webshop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .webshop-items h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+main .webshop-items a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+main .webshop-items h4 {
+    color: #606060
+}
+
+main .webshop-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .detail-page {
+    display: flex;
+    justify-content: space-around;
+}
+
+main .detail-page-left {
+    min-width: 400px;
+}
+
+main .detail-page-right {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+main .detail-page-buy {
+    display: flex;
+    gap: 25px;
+    align-items: flex-end;
+}
+
+main .detail-page-buy a {
+    color: black;
+}
+
+main .detail-page-rating {
+
+}
+
+main .detail-page-rating a {
+    color: black;
+}
+
+main .cart {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+main .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    gap: 25px;
+}
+
+main .cart-item h4 {
+    color: #606060
+}
+
+.standard_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rating_form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating_form button {
+    margin: 0px;
+    padding: 12px;
+}
+
+input {
+    padding: 15px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif; 
+    color: #000000;
+    font-style: italic;
+}
+
+textarea::placeholder {
+    font-family: 'Poppins', sans-serif; 
+    color: #000000;
+    font-style: italic;
+    
+}
+
+textarea {
+    padding: 15px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    height: 100px;
+    resize: none;
+    color: #000000;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 15px;
+}
+
+select {
+    padding: 15px;
+    font-family: 'Poppins', sans-serif; 
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+button {
+    margin-top: 10px;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif; 
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 15px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    cursor: pointer;
+}
+
+.form_radio {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif; 
+    color: #000000;
+    font-style: italic;
+    text-transform: uppercase;
+
+}
+
+footer {
+    margin-top: auto;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: end;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+.error {
+    color: red;
+}
+
+.session_name {
+    text-transform: uppercase;
+}

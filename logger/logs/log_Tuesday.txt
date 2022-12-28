@@ -1,0 +1,216 @@
+27-12-2022 10:39:22 | ::1 | Waar? 
+27-12-2022 10:39:59 | ::1 | 1 
+27-12-2022 10:40:40 | ::1 | 1 
+27-12-2022 10:40:40 | ::1 | Is Ajax? => [true] 
+27-12-2022 10:41:15 | ::1 | Is Ajax? => [true] 
+27-12-2022 10:41:15 | ::1 | komen we hier? 
+27-12-2022 10:42:12 | ::1 | Is Ajax? => [true] 
+27-12-2022 10:42:12 | ::1 | komen we hier? 
+27-12-2022 10:42:45 | ::1 | Is Ajax? => [true] 
+27-12-2022 10:42:45 | ::1 | komen we hier? 
+27-12-2022 10:43:15 | ::1 | Is Ajax? => [true] 
+27-12-2022 10:43:15 | ::1 | Success: inside ajax.controller.php 
+27-12-2022 10:44:30 | ::1 | Is Ajax? => [true] 
+27-12-2022 10:44:30 | ::1 | Func? => ['set_rating'] 
+27-12-2022 10:44:30 | ::1 | Success: inside ajax.controller.php 
+27-12-2022 10:44:58 | ::1 | Is Ajax? => [true] 
+27-12-2022 10:44:58 | ::1 | Success: inside ajax.controller.php 
+27-12-2022 10:47:48 | ::1 | Is Ajax? => [true] 
+27-12-2022 10:47:48 | ::1 | Success: inside ajax.controller.php 
+27-12-2022 10:52:55 | ::1 | action: => ['page'] 
+27-12-2022 10:53:20 | ::1 | action: => ['page'] 
+27-12-2022 10:53:20 | ::1 | action: => ['page'] 
+27-12-2022 10:53:40 | ::1 | action: => ['page'] 
+27-12-2022 10:53:40 | ::1 | action: => ['page'] 
+27-12-2022 10:54:21 | ::1 | action: => ['page'] 
+27-12-2022 10:54:21 | ::1 | action: => ['page'] 
+27-12-2022 10:54:24 | ::1 | action: => ['page'] 
+27-12-2022 10:54:24 | ::1 | action: => ['page'] 
+27-12-2022 10:54:31 | ::1 | action: => ['page'] 
+27-12-2022 10:54:31 | ::1 | action: => ['page'] 
+27-12-2022 10:54:34 | ::1 | action: => ['ajaxcall'] 
+27-12-2022 10:54:34 | ::1 | action: => ['ajaxcall'] 
+27-12-2022 10:55:17 | ::1 | action: => ['page'] 
+27-12-2022 10:55:17 | ::1 | action: => ['page'] 
+27-12-2022 10:55:21 | ::1 | action: => ['ajaxcall'] 
+27-12-2022 10:55:21 | ::1 | action: => ['ajaxcall'] 
+27-12-2022 10:55:53 | ::1 | action: => ['ajaxcall'] 
+27-12-2022 10:56:38 | ::1 | action: => ['ajaxcall'] 
+27-12-2022 10:56:38 | ::1 | func: => ['set_rating'] 
+27-12-2022 10:57:04 | ::1 | action: => ['ajaxcall'] 
+27-12-2022 10:57:04 | ::1 | func: => ['set_rating'] 
+27-12-2022 10:59:09 | ::1 | inside ajax.controller.php: 
+27-12-2022 10:59:30 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:00:12 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:00:12 | ::1 | product ID: => [NULL] 
+27-12-2022 11:00:28 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:00:28 | ::1 | product ID: => [NULL] 
+27-12-2022 11:00:28 | ::1 | product ID: => [28] 
+27-12-2022 11:00:48 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:00:48 | ::1 | product ID: => [NULL] 
+27-12-2022 11:00:48 | ::1 | User ID: => [28] 
+27-12-2022 11:00:48 | ::1 | Rating: => ['4.6'] 
+27-12-2022 11:02:17 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:02:17 | ::1 | product ID: => [NULL] 
+27-12-2022 11:02:17 | ::1 | User ID: => [28] 
+27-12-2022 11:02:17 | ::1 | Rating: => ['3'] 
+27-12-2022 11:02:17 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:02:17 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating'] 
+27-12-2022 11:03:24 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:03:24 | ::1 | product ID: => [NULL] 
+27-12-2022 11:03:24 | ::1 | User ID: => [28] 
+27-12-2022 11:03:24 | ::1 | Rating: => ['3'] 
+27-12-2022 11:03:24 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:03:24 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating'] 
+27-12-2022 11:03:24 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:04:00 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:04:00 | ::1 | product ID: => [NULL] 
+27-12-2022 11:04:00 | ::1 | User ID: => [28] 
+27-12-2022 11:04:00 | ::1 | Rating: => ['2'] 
+27-12-2022 11:04:00 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:04:00 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating'] 
+27-12-2022 11:04:00 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:04:00 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:05:30 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:05:30 | ::1 | product ID: => ['1'] 
+27-12-2022 11:05:30 | ::1 | User ID: => [28] 
+27-12-2022 11:05:30 | ::1 | Rating: => ['4'] 
+27-12-2022 11:05:30 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:05:30 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating&product_id=1'] 
+27-12-2022 11:05:30 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:05:30 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:05:39 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:05:39 | ::1 | product ID: => ['1'] 
+27-12-2022 11:05:39 | ::1 | User ID: => [28] 
+27-12-2022 11:05:39 | ::1 | Rating: => ['4.5'] 
+27-12-2022 11:05:39 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:05:39 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating&product_id=1'] 
+27-12-2022 11:05:39 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:05:39 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:11:55 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:11:55 | ::1 | product ID: => ['<?php echo $_GET[\'id\']; ?>'] 
+27-12-2022 11:11:55 | ::1 | User ID: => [28] 
+27-12-2022 11:11:55 | ::1 | Rating: => ['2'] 
+27-12-2022 11:11:55 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:11:55 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating&product_id=%3C?php%20echo%20$_GET[%27id%27];%20?%3E'] 
+27-12-2022 11:11:55 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:11:55 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:13:43 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:13:43 | ::1 | product ID: => ['<?php echo $_GET[\'id\']; ?>'] 
+27-12-2022 11:13:43 | ::1 | User ID: => [28] 
+27-12-2022 11:13:43 | ::1 | Rating: => ['5.0'] 
+27-12-2022 11:13:43 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:13:43 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating&product_id=%3C?php%20echo%20$_GET[%27id%27];%20?%3E'] 
+27-12-2022 11:13:43 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:13:43 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:16:44 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:16:44 | ::1 | product ID: => ['2'] 
+27-12-2022 11:16:44 | ::1 | User ID: => [28] 
+27-12-2022 11:16:44 | ::1 | Rating: => ['3.2'] 
+27-12-2022 11:16:44 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:16:44 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating&product_id=2'] 
+27-12-2022 11:16:44 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:16:44 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:17:32 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:17:32 | ::1 | product ID: => ['2'] 
+27-12-2022 11:17:32 | ::1 | User ID: => [28] 
+27-12-2022 11:17:32 | ::1 | Rating: => ['5.0'] 
+27-12-2022 11:17:32 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:17:32 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating&product_id=2'] 
+27-12-2022 11:17:32 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:17:32 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:18:42 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:18:42 | ::1 | product ID: => ['2'] 
+27-12-2022 11:18:42 | ::1 | User ID: => [28] 
+27-12-2022 11:18:42 | ::1 | Rating: => ['1'] 
+27-12-2022 11:18:42 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:18:42 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating&product_id=2'] 
+27-12-2022 11:18:42 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:18:42 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:18:48 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:18:48 | ::1 | product ID: => ['1'] 
+27-12-2022 11:18:48 | ::1 | User ID: => [28] 
+27-12-2022 11:18:48 | ::1 | Rating: => ['2'] 
+27-12-2022 11:18:48 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:18:48 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating&product_id=1'] 
+27-12-2022 11:18:48 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:18:48 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:19:11 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:19:11 | ::1 | product ID: => ['1'] 
+27-12-2022 11:19:11 | ::1 | User ID: => [28] 
+27-12-2022 11:19:11 | ::1 | Rating: => ['4.7'] 
+27-12-2022 11:19:11 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:19:11 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating&product_id=1'] 
+27-12-2022 11:19:11 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:19:11 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:20:25 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:20:25 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:20:25 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:20:25 | ::1 | product ID: => [NULL] 
+27-12-2022 11:20:25 | ::1 | User ID: => [28] 
+27-12-2022 11:20:25 | ::1 | Rating: => ['4.6'] 
+27-12-2022 11:20:57 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:20:57 | ::1 | product ID: => [NULL] 
+27-12-2022 11:20:57 | ::1 | User ID: => [28] 
+27-12-2022 11:20:57 | ::1 | Rating: => ['4.6'] 
+27-12-2022 11:20:57 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:20:57 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating&product_id=1'] 
+27-12-2022 11:20:57 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:20:57 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:21:16 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:21:16 | ::1 | product ID: => [NULL] 
+27-12-2022 11:21:16 | ::1 | User ID: => [28] 
+27-12-2022 11:21:16 | ::1 | Rating: => ['4'] 
+27-12-2022 11:21:16 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:21:16 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating&product_id=1'] 
+27-12-2022 11:21:16 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:21:16 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:21:32 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:21:32 | ::1 | product ID: => ['1'] 
+27-12-2022 11:21:32 | ::1 | User ID: => [28] 
+27-12-2022 11:21:32 | ::1 | Rating: => ['5.0'] 
+27-12-2022 11:21:32 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:21:32 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating&product_id=1'] 
+27-12-2022 11:21:32 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:21:32 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:21:51 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:21:51 | ::1 | product ID: => ['1'] 
+27-12-2022 11:21:51 | ::1 | User ID: => [28] 
+27-12-2022 11:21:51 | ::1 | Rating: => ['4.2'] 
+27-12-2022 11:21:51 | ::1 | HTTP_HOST: => ['localhost:8080'] 
+27-12-2022 11:21:51 | ::1 | REQUEST_URI: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating&product_id=1'] 
+27-12-2022 11:21:51 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:21:51 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:23:36 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:23:36 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:23:36 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:23:36 | ::1 | 28 
+27-12-2022 11:23:36 | ::1 | 1 
+27-12-2022 11:23:36 | ::1 | 3 
+27-12-2022 11:25:43 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:25:43 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:25:43 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:25:43 | ::1 | 28 
+27-12-2022 11:25:43 | ::1 | 1 
+27-12-2022 11:25:43 | ::1 | 5.0 
+27-12-2022 11:26:14 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:26:14 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:26:14 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:26:14 | ::1 | 28 
+27-12-2022 11:26:14 | ::1 | 1 
+27-12-2022 11:26:14 | ::1 | 4.6 
+27-12-2022 11:30:41 | ::1 | inside ajax.controller.php: 
+27-12-2022 11:30:41 | ::1 | Func: => ['set_rating'] 
+27-12-2022 11:30:41 | ::1 | inside switch set_rating: ajax.controller.php: 
+27-12-2022 11:30:41 | ::1 | 28 
+27-12-2022 11:30:41 | ::1 | 1 
+27-12-2022 11:30:41 | ::1 | 4.9 
+27-12-2022 12:11:24 | ::1 | komen we hier? 
+27-12-2022 12:13:36 | ::1 | Product ID: => [NULL] 
+27-12-2022 12:14:17 | ::1 | Product ID: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=get_avg_rating&_=1672143256554'] 
+27-12-2022 12:14:45 | ::1 | Product ID: => [NULL] 
+27-12-2022 12:16:01 | ::1 | find id: => [NULL] 
+27-12-2022 12:16:35 | ::1 | find id: => ['/4_PHP_AJAX/index.php'] 
+27-12-2022 12:16:51 | ::1 | find id: => ['/4_PHP_AJAX/index.php?action=ajaxcall&func=get_avg_rating&_=1672143410214'] 
+27-12-2022 12:17:07 | ::1 | find id: => [NULL] 
+27-12-2022 12:17:57 | ::1 | find id: => ['1'] 

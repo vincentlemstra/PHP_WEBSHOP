@@ -1,0 +1,74 @@
+28-12-2022 7:27:59 | ::1 | ProductID: => ['3'] 
+28-12-2022 7:28:33 | ::1 | json_encode => [NULL] 
+28-12-2022 7:29:17 | ::1 | json_encode => [13] 
+28-12-2022 7:29:42 | ::1 | json_encode => [14] 
+28-12-2022 7:29:42 | ::1 | json_encode => [array (
+  0 => 
+  array (
+    'rating' => '4.5',
+  ),
+)] 
+28-12-2022 8:09:55 | ::1 | user exists! 
+28-12-2022 8:10:56 | ::1 | user does not exists, continue to rating 
+28-12-2022 8:11:02 | ::1 | user exists! 
+28-12-2022 8:11:06 | ::1 | user does not exists, continue to rating 
+28-12-2022 8:11:43 | ::1 | user does not exists, continue to rating 
+28-12-2022 8:11:45 | ::1 | user exists! 
+28-12-2022 8:11:50 | ::1 | user exists! 
+28-12-2022 8:11:50 | ::1 | user exists! 
+28-12-2022 8:11:50 | ::1 | user exists! 
+28-12-2022 8:12:44 | ::1 | user exists! 
+28-12-2022 8:16:12 | ::1 | user exists! 
+28-12-2022 8:16:48 | ::1 | user does not exists, continue to rating 
+28-12-2022 8:17:32 | ::1 | user does not exists, continue to rating 
+28-12-2022 8:19:06 | ::1 | user exists! 
+28-12-2022 8:19:11 | ::1 | user does not exists, continue to rating 
+28-12-2022 8:19:53 | ::1 | user does not exists, continue to rating 
+28-12-2022 8:20:22 | ::1 | user does not exists, continue to rating 
+28-12-2022 8:20:35 | ::1 | user does not exists, continue to rating 
+28-12-2022 8:21:18 | ::1 | user does not exists, continue to rating 
+28-12-2022 8:21:34 | ::1 | user exists! 
+28-12-2022 8:21:39 | ::1 | user exists! 
+28-12-2022 8:21:45 | ::1 | user exists! 
+28-12-2022 8:22:15 | ::1 | user exists! 
+28-12-2022 8:22:17 | ::1 | user exists! 
+28-12-2022 8:22:36 | ::1 | user does not exists, continue to rating 
+28-12-2022 8:22:39 | ::1 | user exists! 
+28-12-2022 8:22:41 | ::1 | user exists! 
+28-12-2022 8:22:42 | ::1 | user exists! 
+28-12-2022 8:22:44 | ::1 | user exists! 
+28-12-2022 8:22:48 | ::1 | user exists! 
+28-12-2022 8:22:48 | ::1 | user exists! 
+28-12-2022 8:24:37 | ::1 | user does not exists, continue to rating 
+28-12-2022 8:24:51 | ::1 | user exists! 
+28-12-2022 9:45:23 | ::1 | user exists! 
+28-12-2022 9:45:25 | ::1 | user exists! 
+28-12-2022 9:51:47 | ::1 | user does not exists, continue to rating 
+28-12-2022 9:51:55 | ::1 | user exists! 
+28-12-2022 9:52:24 | ::1 | user exists! 
+28-12-2022 10:22:01 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:23:17 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:24:39 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:25:01 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:25:23 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:26:20 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:26:27 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:26:36 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:26:42 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:27:05 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:27:23 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:50:37 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:51:45 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:52:25 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:52:33 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:52:42 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:52:48 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:53:00 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:53:03 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:53:09 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:53:17 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:53:30 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:53:56 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:55:35 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:56:39 | ::1 | user does not exists, continue to rating 
+28-12-2022 10:56:48 | ::1 | user does not exists, continue to rating 

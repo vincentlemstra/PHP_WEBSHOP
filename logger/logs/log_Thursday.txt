@@ -1,0 +1,18 @@
+22-12-2022 7:58:50 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:01:14 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:02:15 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:02:16 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:02:23 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:02:26 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:04:01 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:04:47 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:06:16 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:06:26 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:06:27 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:06:47 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:06:51 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:10:00 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:10:13 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:10:24 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:16:55 | ::1 | inside public function: handleRequest() main.controller.php 
+22-12-2022 8:16:55 | ::1 | insdie page.controller PageController handlePageRequest 

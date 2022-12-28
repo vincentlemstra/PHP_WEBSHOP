@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+        integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $("#test").load("data.txt", {
+                    Name: "Vince",
+                    Lastname: "Lemes"
+                }, function () {
+                    alert("Hi There!");
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="test">
+        <p>This is the first content!</p>
+    </div>
+
+    <button id="btn">Click to change</button>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax 1 - Text File</title>
+</head>
+
+<body>
+    <button id="button">Get Text File</button>
+    <br><br>
+    <div id="text"></div>
+
+    <script>
+        // create event listener
+        document.getElementById('button').addEventListener('click', loadText);
+
+        function loadText() {
+            console.log('button clicked');
+            // create XHR object
+            var xhr = new XMLHttpRequest();
+            // OPEN - type, url/file, async
+            xhr.open('GET', 'sample.txt', true);
+
+            // OPEN - READYSTATE (1)
+            console.log('READYSTATE: ', xhr.readyState);
+
+            // ONPROGRESS - READYSTATE (3)
+            xhr.onprogress = function () {
+                console.log('READYSTATE: ', xhr.readyState);
+            }
+
+            // LOAD - READYSTATE (4)
+            xhr.onload = function () {
+                console.log('READYSTATE: ', xhr.readyState);
+                if (this.status == 200) {
+                    // console.log(this.responseText);
+                    document.getElementById('text').innerHTML = this.responseText;
+                } else if(this.status == 404) {
+                    document.getElementById('text').innerHTML = this.responseText = 'Not Found';
+                }
+            }
+
+            // ERROR
+            xhr.onerror = function () {
+                console.log('Request Error..');
+            }
+
+            // sends request
+            xhr.send()
+
+            // HTTP statusses
+            // 200: OK
+            // 403: FORBIDDEN
+            // 404: NOT FOUND
+
+            // READY STATES:
+            // #    state               description
+            // 0	UNSENT	            Client has been created. open() not called yet.
+            // 1	OPENED	            open() has been called.
+            // 2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+            // 3	LOADING	            Downloading; responseText holds partial data.
+            // 4	DONE	            The operation is complete.
+        }
+    </script>
+</body>
+
+</html>
