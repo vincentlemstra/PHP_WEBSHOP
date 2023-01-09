@@ -1,6 +1,6 @@
-# PHP WEBSHOP - AJAX RATING SYSTEM
+# PHP WEBSHOP
 
-PHP Webshop met ratings system. Elk product kan per gebruiker een rating tussen de 1 en 5 ontvangen. 
+PHP Webshop met rating system. Elk product kan per gebruiker een rating tussen de 1 en 5 ontvangen. 
 
 ![item_page](https://user-images.githubusercontent.com/22345585/209805771-ebed538c-7eea-48d6-810e-650897838f7d.png)
 
@@ -18,10 +18,3 @@ Deze uitbreiding op de Webshop bevat een rating system waar de gevraagde gegeven
 
 ### Entity Relationship Diagram
 ![erd](https://user-images.githubusercontent.com/22345585/209806950-a56ede73-c25a-4aee-9dc4-ee6f72e94c39.png)
-
-
-## Vorige versies
-
-* PHP Project #1: https://....
-* PHP Project #2: https://....
-* PHP Project #3: https://....
