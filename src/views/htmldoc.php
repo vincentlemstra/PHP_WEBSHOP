@@ -30,12 +30,12 @@ abstract class HtmlDoc
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="/4_PHP_AJAX/css/styles.css">
+            <link rel="stylesheet" href="'.CSS.'">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Poppins&display=swap" rel="stylesheet">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-            <script src="/4_PHP_AJAX/js/main.js"></script>
+            <script src="'.JS.'"></script>
             <title>'.$this->page.'</title> 
         </head>
         <body>
@@ -48,20 +48,18 @@ abstract class HtmlDoc
         echo '
         <nav>
         <ul class="menu">
-            <li><a href="/4_PHP_AJAX/index.php?page=home">HOME</a></li>
-            <li><a href="/4_PHP_AJAX/index.php?page=about">ABOUT</a></li>
-            <li><a href="/4_PHP_AJAX/index.php?page=contact">CONTACT</a></li>
-            <li><a href="/4_PHP_AJAX/index.php?page=shop">WEBSHOP</a></li>
+            <li><a href="'.LINKBASE.'home">HOME</a></li>
+            <li><a href="'.LINKBASE.'about">ABOUT</a></li>
+            <li><a href="'.LINKBASE.'contact">CONTACT</a></li>
+            <li><a href="'.LINKBASE.'shop">WEBSHOP</a></li>
             ';
-            if (isset($_SESSION['email'])) 
-            {
-                echo ' <li><a href="/4_PHP_AJAX/index.php?page=cart">CART</a></li>';
-                echo ' <li><a href="/4_PHP_AJAX/index.php?page=logout">LOGOUT [<span class="session_name">'.$_SESSION['name'].'</span>]</a></li>';
+            if (isset($_SESSION['email'])) {
+                echo ' <li><a href="'.LINKBASE.'cart">CART</a></li>';
+                echo ' <li><a href="'.LINKBASE.'logout">LOGOUT [<span class="session_name">'.$_SESSION['name'].'</span>]</a></li>';
             }
-            else
-            {
-                echo ' <li><a href="/4_PHP_AJAX/index.php?page=login">LOGIN</a></li>
-                <li><a href="/4_PHP_AJAX/index.php?page=register">REGISTER</a></li>';
+            else {
+                echo ' <li><a href="'.LINKBASE.'login">LOGIN</a></li>
+                <li><a href="'.LINKBASE.'register">REGISTER</a></li>';
             }
             
             echo '

@@ -22,7 +22,7 @@ class Item extends HtmlDoc
             if (isset($this->itemcontent[0]['id'])) {
                 echo '
                 <div class="detail-page-left">
-                    <img src="'. $this->itemcontent[0]["image_detail_1"].'" alt="detail img" width="400" height="400">
+                    <img src="'. SHOP_IMG.$this->itemcontent[0]["image_detail_1"].'" alt="detail img" width="400" height="400">
                 </div>
 
                 <div class="detail-page-right">
@@ -40,7 +40,7 @@ class Item extends HtmlDoc
                             <p><span id="rating_message"></span></p>';
                             }
                         } else {
-                            echo '<a href="/4_PHP_AJAX/index.php?page=login">Please login to rate</a>';
+                            echo '<a href="'.LINKBASE.'login">Please login to rate</a>';
                         }
                     echo ' 
                     </div>    
@@ -64,7 +64,7 @@ class Item extends HtmlDoc
                             <button type="submit" name="add_to_cart">ADD TO CART</button>
                         </form>';
                     } else {
-                        echo '<a href="/4_PHP_AJAX/index.php?page=login">Please login to order</a>';
+                        echo '<a href="'.LINKBASE.'login">Please login to order</a>';
                     }
                 echo '
                     <h3>€'.$this->itemcontent[0]["price"].'</h3>

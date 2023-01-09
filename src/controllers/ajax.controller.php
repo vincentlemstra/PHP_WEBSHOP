@@ -6,8 +6,7 @@ class AjaxController extends MainController implements iController {
         try {    
             // start output buffer 
             ob_start();
-            
-            require_once 'model/rating.model.php';
+            require_once MODELS.'rating.model.php';
             $ratingModel = new RatingModel($this->crud);
 
             $func = $this->getVar('func');

@@ -1,13 +1,17 @@
 <?php
+// --- set config
+define('DEV', $_SERVER['HTTP_HOST']==='localhost:8080'); 
+include 'config/'.(DEV?'dev':'prod').'.php';
+
 // --- set logger ---
-require_once 'logger/Logger.php';
+require_once LOGGER;
 
 // --- set page ---
-require_once "model/crud.php";
+require_once MODELS.'crud.php';
 $crud = new Crud();
 
 if ($crud) {
-    require_once "controller/main.controller.php";
+    require_once CONTROLLERS.'main.controller.php';
     $controller = new MainController($crud);
     $controller->handleRequest();
 }

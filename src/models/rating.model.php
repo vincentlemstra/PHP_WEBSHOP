@@ -22,9 +22,11 @@ class RatingModel extends BaseModel {
         $result['userrated'] = false;
         $ratedUsers = $this->getRatedUsers($id);
         for ($i = 0; $i < count($ratedUsers); $i++) {
-            if ($_SESSION['id'] == $ratedUsers[$i]['user_id']) {
-                $result['userrated'] = true;
-            } 
+            if (isset($_SESSION['id'])) {
+                if ($_SESSION['id'] == $ratedUsers[$i]['user_id']) {
+                    $result['userrated'] = true;
+                }
+            }
         }
 
         return $result;

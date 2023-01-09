@@ -10,7 +10,7 @@ class PageController extends PageBaseController
         $this->response = $this->request;
         if ($this->request['posted']) { 
                 // validate postresult
-                require_once 'model/validator.model.php';
+                require_once MODELS.'validator.model.php';
                 $validator = new Validator();
                 $this->response['postresult'] = $validator->checkFields();
     
@@ -21,7 +21,7 @@ class PageController extends PageBaseController
                             break;
     
                         case 'register': 
-                            require_once 'model/user.model.php';
+                            require_once MODELS.'user.model.php';
                             $userModel = new UserModel($this->crud);
                             $this->response['postresult'] = $userModel->saveRegister(
                                 $this->response['postresult']['name'],
@@ -37,7 +37,7 @@ class PageController extends PageBaseController
                             break;
 
                         case 'login':
-                            require_once 'model/user.model.php';
+                            require_once MODELS.'user.model.php';
                             $userModel = new UserModel($this->crud); 
                             $this->response['postresult'] = $userModel->checkLogin($this->response['postresult']['email'], $this->response['postresult']['password']);
                             if (!isset($this->response['postresult']['postError'])) {
@@ -46,14 +46,14 @@ class PageController extends PageBaseController
                             break;
                         
                         case 'cart':
-                            require_once 'model/shop.model.php';
+                            require_once MODELS.'shop.model.php';
                             $shopModel = new ShopModel($this->crud);
                             $shopModel->updateCartContent();
                             $this->response['cartcontent'] = $shopModel->getCartContent();
                             break;
 
                         case 'checkout':
-                            require_once 'model/shop.model.php';
+                            require_once MODELS.'shop.model.php';
                             $shopModel = new ShopModel($this->crud);
                             $shopModel->checkout();
                             break;
@@ -68,23 +68,23 @@ class PageController extends PageBaseController
                     break;
 
                 case 'shop':
-                    require_once 'model/shop.model.php';
+                    require_once MODELS.'shop.model.php';
                     $shopModel = new ShopModel($this->crud);
                     $this->response['shopcontent'] = $shopModel->getShopContent();
                     break;
 
                 case 'item':
-                    require_once 'model/shop.model.php';
+                    require_once MODELS.'shop.model.php';
                     $shopModel = new ShopModel($this->crud);
                     $this->response['itemcontent'] = $shopModel->getItemContent($_GET['id']);
                     
-                    require_once 'model/rating.model.php';
+                    require_once MODELS.'rating.model.php';
                     $ratingModel = new RatingModel($this->crud);
                     $this->response['itemrating'] = $ratingModel->getRatingInfo($_GET['id']);
                     break;
 
                 case 'cart':
-                    require_once 'model/shop.model.php';
+                    require_once MODELS.'shop.model.php';
                     $shopModel = new ShopModel($this->crud);
                     $this->response['cartcontent'] = $shopModel->getCartContent();
                     break;
@@ -100,37 +100,37 @@ class PageController extends PageBaseController
             case 'register':
             case 'login':
             case 'rate':
-                require_once 'view/form.view.php';
+                require_once VIEWS.'form.view.php';
                 $base = new Form($page, PageBaseController::getArrayVar($this->response, 'postresult', []));
                 $base->show();
                 break;
 
             case 'response':
-                require_once 'view/response.view.php';
+                require_once VIEWS.'response.view.php';
                 $base = new $page($page, $this->response['postresult']);
                 $base->show();
                 break;
                     
             case 'shop':
-                require_once 'view/shop.view.php';
+                require_once VIEWS.'shop.view.php';
                 $base = new $page($page, $this->response['shopcontent']);
                 $base->show();
                 break;
                 
             case 'item':
-                require_once 'view/item.view.php';
+                require_once VIEWS.'item.view.php';
                 $base = new $page($page, $this->response['itemcontent'], $this->response['itemrating']);
                 $base->show();
                 break;
 
             case 'cart':
-                require_once 'view/cart.view.php';
+                require_once VIEWS.'cart.view.php';
                 $base = new $page($page, $this->response['cartcontent']);
                 $base->show();
                 break;
 
             default:
-                require_once 'view/'.$page.'.view.php';
+                require_once VIEWS.$page.'.view.php';
                 $base = new $page($page);
                 $base->show();
                 break;

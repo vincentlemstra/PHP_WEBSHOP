@@ -21,7 +21,7 @@ class Cart extends HtmlDoc
             foreach ($this->cartcontent as $content => $this->cartcontent) {
                 echo '
                 <div class="cart-item">
-                    <img src="'. $this->cartcontent["image_main"].'" alt="main img" width="100" height="100">
+                    <img src="'. SHOP_IMG.$this->cartcontent["image_main"].'" alt="main img" width="100" height="100">
                     <h3>'.$this->cartcontent["name"].'</h3>
                     <h4>€'.$this->cartcontent["price"].'</h4>
                     <h4>Quantity: '.$_SESSION['cart'][$this->cartcontent["id"]].'</h4>

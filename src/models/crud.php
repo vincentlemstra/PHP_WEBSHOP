@@ -5,13 +5,8 @@ class Crud {
 
     // --- CONSTRUCT ---
     public function __construct() {
-        $servername = "localhost";
-        $username = "root";
-        $password = "MAMPsetup0191";
-        $dbName = "vincent_database";
-
-        $dsn = 'mysql:host=' . $servername . ';dbname=' . $dbName;
-        $this->conn = new PDO($dsn, $username, $password);
+        $dsn = 'mysql:host=' . PDOSERVER . ';dbname=' . PDODBNAME;
+        $this->conn = new PDO($dsn, PDOUSER, PDOPASS);
         $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
         return $this->conn;      

@@ -19,7 +19,7 @@ $(document).ready(function () {
 
         // save rating in db
         $.ajax({
-            url: "/4_PHP_AJAX/index.php?action=ajaxcall&func=set_rating&product_id=" + product_id,
+            url: "index.php?action=ajaxcall&func=set_rating&product_id=" + product_id,
             type: "POST",
             data: {
                 rating: rating
@@ -43,7 +43,7 @@ $(document).ready(function () {
         $.ajax({
             type: "GET",
             cache: false,
-            url: "/4_PHP_AJAX/index.php?action=ajaxcall&func=get_avg_rating&product_id=" + product_id,
+            url: "index.php?action=ajaxcall&func=get_avg_rating&product_id=" + product_id,
             dataType: "json",
             success: function(data) {
                 $("#avg_rating").text(data[0]['rating']);
@@ -61,7 +61,7 @@ $(document).ready(function () {
         $.ajax({
             type: "GET",
             cache: false,
-            url: "/4_PHP_AJAX/index.php?action=ajaxcall&func=get_total_ratings&product_id=" + product_id,
+            url: "index.php?action=ajaxcall&func=get_total_ratings&product_id=" + product_id,
             dataType: "json",
             success: function(data) {
                 $("#total_ratings").text(data);

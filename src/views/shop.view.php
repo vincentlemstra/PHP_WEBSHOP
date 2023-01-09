@@ -21,7 +21,7 @@ class Shop extends HtmlDoc
                 echo '
                 <a href="/4_PHP_AJAX/index.php?page=item&id='.$this->shopcontent["id"].'">
                     <div class="webshop-item">
-                        <img src="'. $this->shopcontent["image_main"].'" alt="main img" width="200" height="200">
+                        <img src="'. SHOP_IMG.$this->shopcontent["image_main"].'" alt="main img" width="200" height="200">
                         <h3>'.$this->shopcontent["name"].'</h3>
                         <h4>€'.$this->shopcontent["price"].'</h4>
                     </div>
@@ -32,3 +32,4 @@ class Shop extends HtmlDoc
     }
 }
 
+// <img src="'.SHOP_IMG.'promark_forward_5a_main.jpeg"

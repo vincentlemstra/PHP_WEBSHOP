@@ -1,5 +1,5 @@
 <?php
-require_once "interface/icontroller.php";
+require_once INTERFACES.'icontroller.php';
 class MainController implements iController {
     // --- PROPERTIES ---
     protected $action;
@@ -20,12 +20,12 @@ class MainController implements iController {
     {
         switch($this->action) {
             case 'ajaxcall':
-                require_once 'controller/ajax.controller.php';
+                require_once CONTROLLERS.'ajax.controller.php';
                 $controller = new AjaxController($this->crud);
                 break;
             case 'page':
             default:
-                require_once 'controller/page.controller.php';
+                require_once CONTROLLERS.'page.controller.php';
                 $controller = new PageController($this->crud);
                 break;
         }

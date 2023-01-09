@@ -31,7 +31,7 @@ class Form extends HtmlDoc
     }
 
     private function showFields() {
-        require_once "model/site.model.php";
+        require_once MODELS.'site.model.php';
         $siteModel = new SiteModel();
         $this->fieldinfo = $siteModel->getFieldinfo($this->page);
         
