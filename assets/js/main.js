@@ -20,6 +20,7 @@ $(document).ready(function () {
         $.ajax({
             type: "POST",
             url: "index.php?action=ajaxcall&func=set_rating&product_id=" + product_id,
+            dataType: "json",
             data: {
                 rating: rating
             },
