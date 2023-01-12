@@ -4,7 +4,7 @@ define('DEV', $_SERVER['HTTP_HOST']==='localhost:8080');
 include 'config/'.(DEV?'dev':'prod').'.php';
 
 // --- set logger ---
-require_once LOGGER;
+require_once LOGGER.'Logger.php';
 
 // --- set page ---
 require_once MODELS.'crud.php';

@@ -1,35 +1,20 @@
 <?php 
-require_once "main.controller.php";
-class AjaxController extends MainController implements iController {
+require_once "base.controller.php";
+class AjaxController extends BaseController implements iController {
+    // --- PROPERTIES ---
+    protected $func;
+    protected $handler;
+
     // --- PUBLIC METHODS ---
     public function handleRequest() {
         try {    
             // start output buffer 
             ob_start();
-            require_once MODELS.'rating.model.php';
-            $ratingModel = new RatingModel($this->crud);
 
-            $func = $this->getVar('func');
-            switch ($func) {
-                case "set_rating":
-                    $ratingModel->setRating($_SESSION['id'], $_GET['product_id'], $_POST['rating']);
-                    break;
-                // ? kunnen deze worden samengevoegd tot 1? -> getRatingInfo
-                case "get_avg_rating":
-                    $data = $ratingModel->getAvgRating($_GET['product_id']);
-                    header ("Content-type: application/json");
-                    echo json_encode($data);
-                    break;
-                case "get_total_ratings":
-                    $data = $ratingModel->getTotalRatings($_GET['product_id']);
-                    header ("Content-type: application/json");
-                    echo json_encode($data);
-                    break;
-                // ?
-                default:
-                    echo "<h1>OOPS : no action defined for [".$func."]</h1>";
-                    break;
-            }
+            // handle request
+            $this->func = $this->getVar('func');
+            $this->createHandler();
+            $this->executeHandler();
 
             // stop and echo buffer       
             ob_end_flush();
@@ -40,6 +25,28 @@ class AjaxController extends MainController implements iController {
             // send error header + error message 
             header('HTTP/1.1 500 Internal Server Error');
             echo $e->getMessage();
+        }
+    }
+
+    private function createHandler() { 
+        switch($this->func) {
+            case "set_rating":
+                require_once MODELS.'ajax/set_rating.php';
+                $this->handler = new SetRating($this->crud);
+                break;
+            case "get_rating_info":
+                require_once MODELS.'ajax/get_rating_info.php';
+                $this->handler = new GetRatingInfo($this->crud);
+                break;
+            default:
+                echo "<h1>No action defined for [".$func."]</h1>";
+                break;
+        }
+    }
+
+    private function executeHandler() {
+        if ($this->handler) {
+            $this->handler->execute();
         }
     }
 }

@@ -7,8 +7,7 @@ $(document).ready(function () {
             $("#rating_message").text('Please enter a rating between 1 and 5');
         } else {
             setRating();
-            getAvgRating();
-            getTotalRatings();
+            getRatingInfo();
         }
     });
 
@@ -19,8 +18,8 @@ $(document).ready(function () {
 
         // save rating in db
         $.ajax({
-            url: "index.php?action=ajaxcall&func=set_rating&product_id=" + product_id,
             type: "POST",
+            url: "index.php?action=ajaxcall&func=set_rating&product_id=" + product_id,
             data: {
                 rating: rating
             },
@@ -35,39 +34,22 @@ $(document).ready(function () {
         });
     }
 
-    function getAvgRating() {
+    function getRatingInfo() {
         // get product id
         var product_id = getUrlParameter('id');
         
-        // get avg rating from db
+        // get rating info from db
         $.ajax({
             type: "GET",
             cache: false,
-            url: "index.php?action=ajaxcall&func=get_avg_rating&product_id=" + product_id,
+            url: "index.php?action=ajaxcall&func=get_rating_info&product_id=" + product_id,
             dataType: "json",
             success: function(data) {
-                $("#avg_rating").text(data[0]['rating']);
+                $("#avg_rating").text(data['avg_rating'][0]['rating']);
+                $("#total_ratings").text(data['total_ratings']);
             },
             error: function() {
-                console.log("error $.ajax get avg rating call")
-            }
-        });
-    }
-
-    function getTotalRatings() {
-        // get product id
-        var product_id = getUrlParameter('id');
-
-        $.ajax({
-            type: "GET",
-            cache: false,
-            url: "index.php?action=ajaxcall&func=get_total_ratings&product_id=" + product_id,
-            dataType: "json",
-            success: function(data) {
-                $("#total_ratings").text(data);
-            },
-            error: function() {
-                console.log("error $.ajax get total rating call")
+                console.log("error $.ajax get ratinginfo rating call")
             }
         });
     }

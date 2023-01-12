@@ -6,9 +6,10 @@ define('TITLE',         'Vincent Webshop');
 define('AUTHOR',        'Vincent');
 
 // file paths
-define('LOGGER',        'site/logger/Logger.php');
+define('LOGGER',        'site/logger/');
 define('MODELS',		'src/models/');
 define('CONTROLLERS',   'src/controllers/');
+define('CLASSES',       'src/classes/');
 define('INTERFACES',    'src/interfaces/');
 define('VIEWS',         'src/views/');
 define('SHOP_IMG',      'assets/img/shop_img/');

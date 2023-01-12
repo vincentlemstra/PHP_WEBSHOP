@@ -34,7 +34,7 @@ class LogLevel
 class Logger
 {
     // public static $logpath = 'logs/' ;
-    public static $logpath = 'logger/logs/' ;
+    public static $logpath = LOGGER.'logs/' ;
     public static $level  = LogLevel::LVL_ALLWAYS;
     private static $target = LogTarget::TO_LOG|LogTarget::TO_SCR;
     private static $writers = null;
