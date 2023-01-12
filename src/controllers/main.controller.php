@@ -21,6 +21,10 @@ class MainController extends BaseController implements iController {
                 require_once CONTROLLERS.'ajax.controller.php';
                 $controller = new AjaxController($this->crud);
                 break;
+            case 'api':
+                require_once CONTROLLERS.'api.controller.php';
+                $controller = new APIController($this->crud);
+                break;
             case 'page':
             default:
                 require_once CONTROLLERS.'page.controller.php';

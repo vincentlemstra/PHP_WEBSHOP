@@ -28,18 +28,19 @@ class AjaxController extends BaseController implements iController {
         }
     }
 
+    // --- PRIVATE METHODS ---
     private function createHandler() { 
         switch($this->func) {
             case "set_rating":
-                require_once MODELS.'ajax/set_rating.php';
+                require_once CLASSES.'ajax/set_rating.php';
                 $this->handler = new SetRating($this->crud);
                 break;
             case "get_rating_info":
-                require_once MODELS.'ajax/get_rating_info.php';
+                require_once CLASSES.'ajax/get_rating_info.php';
                 $this->handler = new GetRatingInfo($this->crud);
                 break;
             default:
-                echo "<h1>No action defined for [".$func."]</h1>";
+                echo "<h1>No action defined for [".$this->func."]</h1>";
                 break;
         }
     }
