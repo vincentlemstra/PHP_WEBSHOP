@@ -1,6 +1,5 @@
 <?php
-require_once 'base.api.php';
-class ShowData {
+class SendData {
     // --- PROPERTIES ---
     protected $data;
     
@@ -10,7 +9,7 @@ class ShowData {
     }
 
     // --- OVERRIDES ---
-    public function showData() {
+    public function sendData() {
         $type = $_GET['type'];
         switch($type) {
             case "json":

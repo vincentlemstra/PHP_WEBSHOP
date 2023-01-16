@@ -1,6 +1,6 @@
 <?php
-require_once 'base.async.php';
-class SetRating extends BaseAsync {
+require_once CLASSES.'base.flow.php';
+class SetRating extends BaseFlow {
     // --- PROPERTIES ---
     protected $user_id;
     protected $product_id;
@@ -19,7 +19,8 @@ class SetRating extends BaseAsync {
     protected function getData() {
         require_once MODELS.'rating.model.php';
         $ratingModel = new RatingModel($this->crud);
-        return $this->data = $ratingModel->setRating($this->user_id, $this->product_id, $this->rating);
+        $this->data = $ratingModel->setRating($this->user_id, $this->product_id, $this->rating);
+        return $this->data ? True : False;
     }
     
     protected function sendData() {

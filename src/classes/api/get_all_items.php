@@ -1,6 +1,6 @@
 <?php
-require_once 'base.api.php';
-class GetAllItems extends BaseApi {
+require_once CLASSES.'base.flow.php';
+class GetAllItems extends BaseFlow {
     // --- PROPERTIES ---
     protected $data;
 
@@ -17,9 +17,9 @@ class GetAllItems extends BaseApi {
         return $this->data = $shopModel->getShopContent();
     }
 
-    protected function showData() {
-        require_once 'show_data.php';
-        $showData = new ShowData($this->data);
-        return $showData->showData();
+    protected function sendData() {
+        require_once 'send_data.php';
+        $sendData = new SendData($this->data);
+        return $sendData->sendData();
     }
 }

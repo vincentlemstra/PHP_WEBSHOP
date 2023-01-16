@@ -1,6 +1,6 @@
 <?php
 require_once MODELS.'base.model.php';
-abstract class BaseAsync extends BaseModel {
+abstract class BaseFlow extends BaseModel {
     // --- PUBLIC METHODS ---
     public function execute() {
         if ($this->getData()) {

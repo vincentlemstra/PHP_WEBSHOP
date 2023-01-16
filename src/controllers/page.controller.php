@@ -93,6 +93,7 @@ class PageController extends PageBaseController
     }
 
     protected function showResponse() {
+        $handler;
         $page = isset($this->response['page']) ? $this->response['page'] : 'home';
 
         switch ($this->response['page']) {
@@ -101,39 +102,34 @@ class PageController extends PageBaseController
             case 'login':
             case 'rate':
                 require_once VIEWS.'form.view.php';
-                $base = new Form($page, PageBaseController::getArrayVar($this->response, 'postresult', []));
-                $base->show();
+                $handler = new Form($page, PageBaseController::getArrayVar($this->response, 'postresult', []));
                 break;
 
             case 'response':
                 require_once VIEWS.'response.view.php';
-                $base = new $page($page, $this->response['postresult']);
-                $base->show();
+                $handler = new $page($page, $this->response['postresult']);
                 break;
                     
             case 'shop':
                 require_once VIEWS.'shop.view.php';
-                $base = new $page($page, $this->response['shopcontent']);
-                $base->show();
+                $handler = new $page($page, $this->response['shopcontent']);
                 break;
                 
             case 'item':
                 require_once VIEWS.'item.view.php';
-                $base = new $page($page, $this->response['itemcontent'], $this->response['itemrating']);
-                $base->show();
+                $handler = new $page($page, $this->response['itemcontent'], $this->response['itemrating']);
                 break;
 
             case 'cart':
                 require_once VIEWS.'cart.view.php';
-                $base = new $page($page, $this->response['cartcontent']);
-                $base->show();
+                $handler = new $page($page, $this->response['cartcontent']);
                 break;
 
             default:
                 require_once VIEWS.$page.'.view.php';
-                $base = new $page($page);
-                $base->show();
+                $handler = new $page($page);
                 break;
         }
+        $handler->show();
     }
 }

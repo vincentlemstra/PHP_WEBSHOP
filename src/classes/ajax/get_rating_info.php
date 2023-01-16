@@ -1,6 +1,6 @@
 <?php
-require_once 'base.async.php';
-class GetRatingInfo extends BaseAsync {
+require_once CLASSES.'base.flow.php';
+class GetRatingInfo extends BaseFlow {
     // --- PROPERTIES ---
     protected $product_id;
     protected $data;
@@ -19,7 +19,7 @@ class GetRatingInfo extends BaseAsync {
         $this->data = [];
         $this->data['avg_rating'] = $ratingModel->getAvgRating($this->product_id);
         $this->data['total_ratings'] = $ratingModel->getTotalRatings($this->product_id);
-        return $this->data;
+        return $this->data ? True : False;
     }
     
     protected function sendData() {        

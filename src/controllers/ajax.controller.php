@@ -24,7 +24,7 @@ class AjaxController extends BaseController implements iController {
             ob_end_clean();
             // send error header + error message 
             header('HTTP/1.1 500 Internal Server Error');
-            echo $e->getMessage();
+            throw new Exception($e->getMessage());
         }
     }
 
